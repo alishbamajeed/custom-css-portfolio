@@ -1,0 +1,110 @@
+/* Contact Container */
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #b3b3f5, #6a4c9c, #3d2138, #3a3b3d);
+  border-radius: 10px; /* Added rounded corners for aesthetic */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #696970; /* Lighter text color */
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  background-color: #ccb8b8; /* Light background for inputs */
+  transition: background-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  background-color: #e2bfbf; /* Slight darkening when focused */
+  outline: none;
+}
+
+/* Button */
+button {
+  background-color: #00bfff;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0099cc;
+  transform: scale(1.05); /* Slight scale effect for better feedback */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 15px;
+    max-width: 100%; /* Full-width container for small screens */
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px; /* Slightly smaller text for better fit */
+    padding: 10px;
+  }
+  
+  button {
+    padding: 12px;
+    font-size: 14px; /* Adjusted button size for mobile */
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-container {
+    padding: 10px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 14px; /* Consistent button size on smaller screens */
+  }
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Regular.woff2') format('woff2'),
+       url('/fonts/Inter-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}

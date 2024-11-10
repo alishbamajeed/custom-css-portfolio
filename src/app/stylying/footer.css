@@ -1,0 +1,54 @@
+.footer {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-logo h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin: 0 0 15px;
+  }
+  
+  .footer-content {
+    text-align: center;
+  }
+  
+  .social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .social-links a {
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #00aaff;
+  }
+  
+  .footer-text {
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    margin-top: 10px;
+  }
+  @font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Regular.woff2') format('woff2'),
+         url('/fonts/Inter-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
